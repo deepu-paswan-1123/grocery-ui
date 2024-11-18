@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+
+        }
+
+        td {
+            background-color: #fff;
+        }
+
+        .main {
+            min-height: 100vh;
+            width: 100%;
+
+        }
+
+        .box1 {
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(to right, rgba(0, 128, 0, 0.578), rgba(153, 205, 50, 0.751));
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .first {
+            height: 400px;
+            width: 600px;
+
+            background-color: blue;
+            overflow-y: auto;
+
+        }
+
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+
+        .user_info {
+            /* background-color: #fff; */
+            width: 600px;
+            border: none;
+            border-collapse: collapse;
+
+
+
+        }
+
+        .user_info th {
+            border: 1px solid black;
+            background-color: white;
+        }
+
+        .second {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .second input {
+            width: 200px;
+            padding: 4px 0;
+            outline: none;
+            border: none;
+        }
+
+        .btn {
+            margin-top: 20px;
+            height: 40px;
+            width: 150px;
+            font-size: 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            outline: none;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.406);
+            cursor: pointer;
+        }
+
+        i {
+            height: 40px;
+            width: 50px;
+            background-color: red;
+            font-size: 5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="first">
+            <table class="user_info">
+                <tr>
+                    <th>Id</th>
+                    <th>name</th>
+                    <th>Roll No.</th>
+                    <th>class</th>
+                    <th>Email</th>
+                    <th>operation</th>
+
+                </tr>
+
+
+
+
+
+
+            </table>
+        </div>
+        <div class="second">
+            <div class="user_input">
+                <p>Id</p>
+                <input type="number" name="" class="user_id">
+            </div>
+            <div class="user_input">
+                <p>name</p>
+                <input type="text" name="" class="user_name">
+            </div>
+            <div class="user_input">
+                <p>class</p>
+                <input type="text" name="" class="user_roll">
+            </div>
+            <div class="user_input">
+                <p>Roll No.</p>
+                <input type="text" name="" class="user_class">
+            </div>
+            <div class="user_input">
+                <p>Email</p>
+                <input type="email" name="" class="user_email">
+            </div>
+        </div>
+
+        <button class="btn">Add Data</button>
+    </div>
+
+</body>
+<script>
+    let btn = document.querySelector(".btn");
+    let user_info = document.querySelector(".user_info");
+    let user_input = document.querySelectorAll(".user_input");
+    let user_id = document.querySelector(".user_id")
+    let user_name = document.querySelector(".user_name")
+    let user_roll = document.querySelector(".user_roll")
+    let user_class = document.querySelector(".user_class")
+    let user_email = document.querySelector(".user_email")
+    btn.addEventListener('click', function () {
+        if (user_id.value && user_name.value && user_roll.value && user_class.value && user_email.value != "") {
+            let tr = document.createElement("tr");
+            let id1 = document.createElement("td")
+            let name = document.createElement("td")
+            let rollno = document.createElement("td")
+            let class1 = document.createElement("td")
+            let email = document.createElement("td")
+            let del = document.createElement("td")
+            let i = document.createElement("td")
+
+            i.setAttribute('class', "ri-delete-bin-2-line")
+
+            del.appendChild(i)
+
+
+
+            i.addEventListener('click', function () {
+
+                let con = confirm("Are you want to delete it?")
+                if (con == true) {
+                    i.parentElement.parentElement.remove()
+
+                }
+
+            })
+
+
+            id1.innerHTML = user_id.value
+            name.innerHTML = user_name.value
+            rollno.innerHTML = user_roll.value
+            class1.innerHTML = user_class.value
+            email.innerHTML = user_email.value
+
+
+
+
+            tr.appendChild(id1)
+            tr.appendChild(name)
+            tr.appendChild(rollno)
+            tr.appendChild(class1)
+            tr.appendChild(email)
+            tr.appendChild(del)
+            user_info.appendChild(tr)
+
+            console.log(user_info);
+
+            user_id.value = ""
+            user_name.value = ""
+            user_roll.value = ""
+            user_class.value = ""
+            user_email.value = ""
+
+        }
+
+        else {
+            alert("fill your form!")
+        }
+
+
+
+
+
+
+    })
+
+</script>
+
+</html>

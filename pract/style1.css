@@ -1,0 +1,326 @@
+.blog {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.blog h4 {
+    font-size: 2.5vmin;
+    padding-left: 10px;
+    margin-left: 2px;
+    width: auto;
+}
+
+.blog h4:hover {
+    border-left: 2px solid rgb(131, 188, 18);
+    color: rgb(131, 188, 18);
+    padding-left: 8px; /* Adjust padding to account for the border */
+}
+
+.veg_blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    width: 100%;
+}
+
+.blog_img {
+    flex: 1 1 340px;
+    max-width: 340px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.blog1 {
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.blog1 img {
+    height: 100%;
+    width: 100%;
+}
+
+.blog p {
+    font-size: 2.5vmin;
+    padding: 0 30px;
+    text-align: justify;
+}
+
+.blog p:hover {
+    color: rgb(131, 188, 18);
+}
+
+.shop1 {
+    padding: 10px 20px;
+    font-size: 2vmin;
+    background-color: rgb(131, 188, 18);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.shop1:hover {
+    background-color: rgb(100, 150, 14);
+}
+
+@media (max-width: 768px) {
+    .blog h4 {
+        font-size: 3vmin;
+    }
+
+    .blog_img {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog h4 {
+        font-size: 4vmin;
+    }
+
+    .blog_img {
+        flex: 1 1 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .blog1 {
+        height: auto;
+    }
+
+    .blog1 img {
+        width: auto;
+        height: auto;
+    }
+
+    .blog p {
+        font-size: 3vmin;
+        padding: 0 10px;
+    }
+
+    .shop1 {
+        font-size: 3vmin;
+    }
+}
+
+
+
+
+
+
+
+
+.brand {
+    height: auto;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.brand h4 {
+    font-size: 2.5vmin;
+    padding-left: 10px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.brand h4:hover {
+    border-left: 2px solid rgb(131, 188, 18);
+    color: rgb(131, 188, 18);
+    padding-left: 8px; /* Adjust padding to account for the border */
+}
+
+.brand1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.inner_brand {
+    flex: 1 1 150px;
+    max-width: 150px;
+    height: 80px;
+    background: green;
+    border: 1px solid black;
+}
+
+.inner_brand img {
+    height: 100%;
+    width: 100%;
+}
+
+.inner_brand:hover {
+    border: 2px solid black;
+}
+
+@media (max-width: 768px) {
+    .brand h4 {
+        font-size: 3vmin;
+    }
+
+    .inner_brand {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand h4 {
+        font-size: 4vmin;
+    }
+
+    .inner_brand {
+        flex: 1 1 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .inner_brand img {
+        width: auto;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+.footer {
+    height: auto; /* Changed from fixed height */
+    padding: 20px 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.footer_box {
+    height: auto; /* Changed from fixed height */
+    width: 100%; /* Full width on smaller screens */
+    max-width: 200px; /* Limit max width */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0; /* Added margin for spacing */
+}
+
+.footer_icon {
+    height: 30px;
+    width: 100%; /* Full width on smaller screens */
+    max-width: 170px; /* Limit max width */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px; /* Added margin for spacing */
+}
+
+.f-icon1 {
+    min-height: 30px;
+    width: 30px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.f-icon1:hover {
+    background-color: rgb(131, 188, 18);
+    transition: .2s linear;
+    border-radius: 2px;
+}
+
+.footer_box p {
+    color: rgb(172, 170, 170);
+    text-align: center; /* Center text on smaller screens */
+}
+
+.footer_box h3 {
+    color: white;
+}
+
+.underline {
+    height: 2px;
+    width: 20px;
+    background-color: rgb(131, 188, 18);
+}
+
+.footer_box h4 {
+    color: white;
+}
+
+.foot_one {
+    justify-content: space-evenly;
+    align-items: start;
+    padding-left: 30px;
+    width: 100%; /* Full width on smaller screens */
+    max-width: 200px; /* Limit max width */
+}
+
+.foot_one p {
+    transition: .3s linear;
+    cursor: pointer;
+    text-align: left; /* Align text to left */
+}
+
+.foot_one p:hover {
+    color: whitesmoke;
+    transform: translateX(10px);
+}
+
+.address i {
+    font-size: 10px;
+    color: white;
+}
+
+.address li {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer_box {
+        width: 80%; /* Make footer boxes wider */
+        max-width: none; /* Remove max width limit */
+    }
+    
+    .footer_icon {
+        justify-content: center; /* Center icons */
+    }
+    
+    .foot_one {
+        padding-left: 0; /* Remove left padding */
+        align-items: center; /* Center align items */
+    }
+    
+    .foot_one p {
+        text-align: center; /* Center text */
+    }
+}

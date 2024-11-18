@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .main {
+            min-height: 100vh;
+            width: 100%;
+
+        }
+
+        .box1 {
+            height: 100vh;
+            width: 100%;
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .first {
+            height: 300px;
+            width: 600px;
+            background: red;
+        }
+
+        .user_info {
+            width: 600px;
+        }
+
+        .second {
+            height: 300px;
+            width: 600px;
+            background-color: gold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .input {
+            height: 20px;
+            border: none;
+        }
+
+        .btn {
+            height: 40px;
+            width: 150px;
+            background-color: darkcyan;
+            border: none;
+            outline: none;
+            color: white;
+            transition: all .4s linear;
+        }
+
+        .btn:hover {
+            background-color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box1">
+            <div class="first">
+                <table class="user_info">
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>RollNo.</th>
+                        <th>Class</th>
+                        <th>Email</th>
+                    </tr>
+
+                    <tr>
+                        <td>34</td>
+                        <td>ere</td>
+                        <td>ght</td>
+                        <td>jhk</td>
+                        <td>jhk</td>
+                    </tr>
+                    
+
+                </table>
+            </div>
+
+            <div class="second">
+                <div class="user_input">
+                    <p>Id</p>
+                    <input type="text" class="input">
+                </div>
+                <div class="user_input">
+                    <p>Name</p>
+                    <input type="text" class="input">
+                </div>
+                <div class="user_input">
+                    <p>RollNo</p>
+                    <input type="text" class="input">
+                </div>
+                <div class="user_input">
+                    <p>Class</p>
+                    <input type="text" class="input">
+                </div>
+                <div class="user_input">
+                    <p>Email</p>
+                    <input type="text" class="input">
+                </div>
+                <button class="btn">Add Data</button>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+<script>
+    let user_info=document.querySelector(".user_info");
+    let btn=document.querySelector(".btn");
+    let get=document.getElementsByClassName("input")
+    btn.addEventListener('click',function(){
+        let tr=document.createElement("tr")
+        for(let i=0;i<=4;i++){
+            let td=document.createElement("td")
+            for(j=0;j<=i; j++)
+            {
+                
+
+            }
+
+            tr.appendChild(td)
+            
+        }
+        console.log(get)
+        console.log(tr)
+
+    })
+</script>
+
+</html>

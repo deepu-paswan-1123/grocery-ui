@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+      integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="main">
+      <header>
+        <div class="header">
+          <div class="header_top">
+            <div class="top_left">
+              <p>Here all product of grocery are available</p>
+            </div>
+            <div class="top_right">
+              <p>all grocery product are available</p>
+            </div>
+          </div>
+
+          <div class="header_bottom">
+            <div class="bottom_left">
+              <h2>Flipmart</h2>
+            </div>
+            <div class="bottom_middle">
+              <input type="text" placeholder="All categories" class="input" />
+              <div class="search"><i class="ri-search-line"></i></div>
+            </div>
+            <div class="bottom_right">
+              <div class="number">
+                <p>0</p>
+              </div>
+              <div class="cart_icon"><i class="ri-home-2-line"></i></div>
+              <p>my cart</p>
+            </div>
+          </div>
+          <div class="navbar">
+            <ul class="navlist">
+              <ul>
+                <a href="">Home</a>
+              </ul>
+              <ul>
+                <a href="">Order</a>
+              </ul>
+              <ul>
+                <a href="">Women</a>
+              </ul>
+              <ul>
+                <a href="">Men</a>
+              </ul>
+              <ul>
+                <a href="">Info</a>
+              </ul>
+              <ul>
+                <a href="">Services</a>
+              </ul>
+              <ul>
+                <a href="">More</a>
+              </ul>
+            </ul>
+
+            <button class="btn">click</button>
+          </div>
+        </div>
+        <div class="plus">
+          <h1>+</h1>
+        </div>
+      </header>
+
+      <div class="full_img"></div>
+
+      <div class="section1">
+        <div class="categories">
+          <button class="btn1" onmouseleave="leave()" onmouseenter="enter()">
+            Filter<i class="ri-menu-add-fill"></i>
+          </button>
+          <div class="left1">
+            <div class="item1">
+              <h2>categories</h2>
+            </div>
+            <ul class="vegetables">
+              <div class="option">
+                <li class="veg" onmouseenter="veg()" onmouseleave="veg1()">
+                  leafy green
+                </li>
+                <div class="leafy"></div>
+              </div>
+              <li>Cruciferous</li>
+              <li>marrow</li>
+              <li>Root vegetables</li>
+              <li>Edible plant stem</li>
+              <li>allium</li>
+              <li>+ More categories</li>
+            </ul>
+          </div>
+        </div>
+        <div class="right1">
+          <div class="owl-carousel owl-theme">
+            <div
+              class="item"
+              style="background-image: url(img/slide_img-1.jpg)"
+            >
+              <div class="content1">
+                <h1>Grocery Store</h1>
+
+                <p>
+                  Fresh
+                  <span style="color: forestgreen">Fruits & vegetables </span>
+                  at Your Doorstop
+                </p>
+
+                <button class="shop">Shop Now</button>
+              </div>
+            </div>
+            <div
+              class="item"
+              style="background-image: url(img/slide_img-2.jpg)"
+            >
+              <div class="content1">
+                <h1>Grocery Store</h1>
+
+                <p>
+                  Fresh
+                  <span style="color: forestgreen">Fruits & vegetables </span>
+                  at Your Doorstop
+                </p>
+
+                <button class="shop">Shop Now</button>
+              </div>
+            </div>
+            <div
+              class="item"
+              style="background-image: url(img/slide_img-3.jpg)"
+            >
+              <div class="content1">
+                <h1>Grocery Store</h1>
+
+                <p>
+                  Fresh
+                  <span style="color: forestgreen">Fruits & vegetables </span>
+                  at Your Doorstop
+                </p>
+
+                <button class="shop" onmouseenter="shop()">Shop Now</button>
+              </div>
+            </div>
+            <div
+              class="item"
+              style="background-image: url(img/slide_img-4.jpg)"
+            >
+              <div class="content1">
+                <h1>Grocery Store</h1>
+
+                <p>
+                  Fresh
+                  <span style="color: forestgreen">Fruits & vegetables </span>
+                  at Your Doorstop
+                </p>
+
+                <button class="shop">Shop Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section2">
+        <div class="list">
+          <div class="left2">
+            <h2 class="heading2">Deal of the Day</h2>
+
+            <button class="new">New</button>
+
+            <div class="image2">
+              <img src="img/rajma.jpg" alt="" />
+
+              <div class="icon2">
+                <i class="ri-heart-line"></i>
+                <i class="ri-code-view"></i>
+                <i class="ri-eye-line"></i>
+              </div>
+            </div>
+
+            <p style="font-size: 2vmin">Lorem ipsuim x-ham</p>
+
+            <div class="stars">
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-fill"></i>
+              <i class="ri-star-s-line"></i>
+            </div>
+
+            <p style="font-size: 2vmin; margin-bottom: 10px">$99.00</p>
+
+            <div class="numbers">
+              <div class="numbers1">269</div>
+              <div class="numbers1">09</div>
+              <div class="numbers1">35</div>
+              <div class="numbers1">49</div>
+            </div>
+          </div>
+
+          <div class="left2" style="gap: 1px; background-color: silver">
+            <h2 class="heading2">Our Services</h2>
+            <div class="services">
+              <div class="ser-img">
+                <img
+                  src="img/delivery-man-with-face-mask-delivering-order-motorcycle_154993-160.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div class="ser-text">
+                <h4>Free Delievery</h4>
+                <p>5 Delievery Free</p>
+              </div>
+            </div>
+            <div class="services">
+              <div class="ser-img">
+                <img src="img/online.jpg" alt="" />
+              </div>
+
+              <div class="ser-text">
+                <h4>Online Payment</h4>
+                <p>G-pay</p>
+                <p>UPI</p>
+                <p>Paytm</p>
+              </div>
+            </div>
+            <div class="services">
+              <div class="ser-img">
+                <img src="img/wallet.jpg" alt="" />
+              </div>
+
+              <div class="ser-text">
+                <h4>Delievery on Cash</h4>
+                <p>Some Offers</p>
+              </div>
+            </div>
+            <div class="services">
+              <div class="ser-img">
+                <img src="img/discount.jpg" alt="" />
+              </div>
+
+              <div class="ser-text">
+                <h4>Special Offers</h4>
+                <h4>On Ocassion</h4>
+                <p>Upto 50% Off</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="left2">
+            <h2 class="heading2">Review Of Customers</h2>
+            <div class="left2_icon">
+              <i class="ri-double-quotes-l"></i>
+            </div>
+
+            <p class="review_text">
+              I recently had the pleasure of visiting [Grocery Store Name] for
+              my weekly grocery shopping, and I must say it was a truly
+              delightful experience from start to finish. The moment I stepped
+              through the doors, I was greeted by a clean and well-organized
+              store layout that made finding items a breeze.
+            </p>
+            <div class="review">
+              <div class="owl-carousel owl-theme">
+                <div class="item4">
+                  <img
+                    src="img/review4.jpg"
+                    alt=""
+                    style="height: 50px; width: 50px; border-radius: 50%"
+                  />
+                  <h4>Varun pandey</h4>
+                </div>
+
+                <div class="item4">
+                  <img
+                    src="img/review.jpg"
+                    alt=""
+                    style="height: 50px; width: 50px; border-radius: 50%"
+                  />
+                  <h4>Priya Sharma</h4>
+                </div>
+
+                <div class="item4">
+                  <img
+                    src="img/review3.jpg"
+                    alt=""
+                    style="height: 50px; width: 50px; border-radius: 50%"
+                  />
+                  <h4>Aashutosh</h4>
+                </div>
+
+                <div class="item4">
+                  <img
+                    src="img/review2.jpg"
+                    alt=""
+                    style="height: 50px; width: 50px; border-radius: 50%"
+                  />
+                  <h4>Piyanka Mongia</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="left2 super"
+            style="background-image: url('img/super\ grocery.jpg')"
+          >
+            <h2>Super Grocery Sale</h2>
+            <p>Get up to 40% Off</p>
+
+            <div class="discount">
+              <p>1.Shop our website at [YourWebsite.com]</p>
+              <p>2.Select your items and proceed to checkout.</p>
+              <p>3.Enter the discount code SAVE15NOW at the checkout.</p>
+              <p>4.Enjoy your savings!</p>
+            </div>
+
+            <button class="shop1">Shop Now</button>
+          </div>
+
+          <div class="left2 last">
+            <div class="heading2">
+              <h2>Mail Box</h2>
+            </div>
+
+            <i class="ri-send-plane-fill"></i>
+            <div class="mail_text">
+              <p>
+                Never miss out on our latest offers! Share your email with us
+                and unlock exclusive deals. Simply reply with your email address
+                or visit [Grocery.com/signup].
+              </p>
+            </div>
+
+            <input
+              type="email"
+              name=""
+              class="mail"
+              placeholder="Enter Your Email"
+            />
+          </div>
+        </div>
+
+        <div class="grocery">
+          <div class="right2">
+            <!-- <div class="right2_left"> -->
+            <div class="right-img">
+              <div class="variety">
+                <img src="img/right1.jpg" alt="" />
+
+                <div class="var-icon"></div>
+              </div>
+              <h4>Fruits</h4>
+            </div>
+
+            <div class="right-img">
+              <div class="variety">
+                <img src="img/vegetables.jpg" alt="" />
+              </div>
+
+              <h4>Vegetables</h4>
+            </div>
+
+            <div class="right-img">
+              <div class="variety">
+                <img src="img/oilfodd.jpg" alt="" />
+              </div>
+              <h4>Spicy</h4>
+            </div>
+            <!-- </div> -->
+
+            <!-- <div class="right2_left"> -->
+
+            <div class="right-img">
+              <div class="variety">
+                <img src="img/cheese.jpg" alt="" />
+              </div>
+
+              <h4>Cheese</h4>
+            </div>
+
+            <div class="right-img">
+              <div class="variety">
+                <img src="img/burger.jpg" alt="" />
+              </div>
+              <h4>fatty</h4>
+            </div>
+
+            <div class="right-img">
+              <div class="variety">
+                <img src="img/tangopotato.jpg" alt="" />
+              </div>
+              <h4>Non-veg</h4>
+            </div>
+
+            <!-- </div> -->
+          </div>
+
+          <div class="fruit">
+            <ul class="fruit-nav">
+              <li><a href="">Features</a></li>
+              <li><a href="">Latest</a></li>
+              <li><a href="">Best</a></li>
+            </ul>
+
+            <div class="fruit-box1">
+              <div class="small-img">
+                <div class="fruit-img">
+                  <img src="img/fruit1.png" alt="" class="f-image" />
+
+                  <div class="fruit-icon">
+                    <i class="ri-heart-fill heart"></i>
+                    <i class="ri-code-view"></i>
+                    <i class="ri-eye-line"></i>
+                  </div>
+                </div>
+
+                <p>Lorem Ipsum Color</p>
+                <div class="small-star">
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-line"></i>
+                </div>
+                <p>$99.00</p>
+
+                <div class="add">
+                  <i class="ri-home-2-line"></i>
+                  <p>Add to Cart</p>
+                </div>
+              </div>
+              <div class="small-img">
+                <div class="fruit-img">
+                  <img src="img/fruit2.png" alt="" class="f-image" />
+                  <div class="fruit-icon">
+                    <i class="ri-heart-fill heart"></i>
+                    <i class="ri-code-view"></i>
+                    <i class="ri-eye-line"></i>
+                  </div>
+                </div>
+
+                <p>Lorem Ipsum Color</p>
+
+                <div class="small-star">
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-line"></i>
+                </div>
+                <p>$99.00</p>
+                <div class="add">
+                  <i class="ri-home-2-line"></i>
+                  <p>Add to Cart</p>
+                </div>
+              </div>
+              <div class="small-img">
+                <div class="fruit-img">
+                  <img src="img/fruit3.png" alt="" class="f-image" />
+
+                  <div class="fruit-icon">
+                    <i class="ri-heart-fill heart"></i>
+                    <i class="ri-code-view"></i>
+                    <i class="ri-eye-line"></i>
+                  </div>
+                </div>
+
+                <p>Lorem Ipsum Color</p>
+
+                <div class="small-star">
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-line"></i>
+                </div>
+                <p>$99.00</p>
+                <div class="add">
+                  <i class="ri-home-2-line"></i>
+                  <p>Add to Cart</p>
+                </div>
+              </div>
+              <div class="small-img">
+                <div class="fruit-img">
+                  <img src="img/fruit4.png" alt="" class="f-image" />
+
+                  <div class="fruit-icon">
+                    <i class="ri-heart-fill heart"></i>
+                    <i class="ri-code-view"></i>
+                    <i class="ri-eye-line"></i>
+                  </div>
+                </div>
+
+                <p>Lorem Ipsum Color</p>
+
+                <div class="small-star">
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-line"></i>
+                </div>
+
+                <p>$99.00</p>
+                <div class="add">
+                  <i class="ri-home-2-line"></i>
+                  <p>Add to Cart</p>
+                </div>
+              </div>
+              <div class="small-img">
+                <div class="fruit-img">
+                  <img src="img/fruit5.png" alt="" class="f-image" />
+
+                  <div class="fruit-icon">
+                    <i class="ri-heart-fill heart"></i>
+                    <i class="ri-code-view"></i>
+                    <i class="ri-eye-line"></i>
+                  </div>
+                </div>
+                <p>Lorem Ipsum Color</p>
+
+                <div class="small-star">
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-line"></i>
+                </div>
+                <p>$99.00</p>
+                <div class="add">
+                  <i class="ri-home-2-line"></i>
+                  <p>Add to Cart</p>
+                </div>
+              </div>
+            </div>
+            <div class="fruit-box1">
+              <div class="small-img">
+                <div class="fruit-img">
+                  <img src="img/fruit6.png" alt="" class="f-image" />
+
+                  <div class="fruit-icon">
+                    <i class="ri-heart-fill heart"></i>
+                    <i class="ri-code-view"></i>
+                    <i class="ri-eye-line"></i>
+                  </div>
+                </div>
+
+                <p>Lorem Ipsum Color</p>
+
+                <div class="small-star">
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-line"></i>
+                </div>
+                <p>$99.00</p>
+                <div class="add">
+                  <i class="ri-home-2-line"></i>
+                  <p>Add to Cart</p>
+                </div>
+              </div>
+              <div class="small-img">
+                <div class="fruit-img">
+                  <img src="img/fruit7.png" alt="" class="f-image" />
+
+                  <div class="fruit-icon">
+                    <i class="ri-heart-fill heart"></i>
+                    <i class="ri-code-view"></i>
+                    <i class="ri-eye-line"></i>
+                  </div>
+                </div>
+
+                <p>Lorem Ipsum Color</p>
+
+                <div class="small-star">
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-line"></i>
+                </div>
+                <p>$99.00</p>
+                <div class="add">
+                  <i class="ri-home-2-line"></i>
+                  <p>Add to Cart</p>
+                </div>
+              </div>
+              <div class="small-img">
+                <div class="fruit-img">
+                  <img src="img/fruit8.png" alt="" class="f-image" />
+
+                  <div class="fruit-icon">
+                    <i class="ri-heart-fill heart"></i>
+                    <i class="ri-code-view"></i>
+                    <i class="ri-eye-line"></i>
+                  </div>
+                </div>
+
+                <p>Lorem Ipsum Color</p>
+
+                <div class="small-star">
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-line"></i>
+                </div>
+                <p>$99.00</p>
+                <div class="add">
+                  <i class="ri-home-2-line"></i>
+                  <p>Add to Cart</p>
+                </div>
+              </div>
+              <div class="small-img">
+                <div class="fruit-img">
+                  <img src="img/fruit9.png" alt="" class="f-image" />
+
+                  <div class="fruit-icon">
+                    <i class="ri-heart-fill heart"></i>
+                    <i class="ri-code-view"></i>
+                    <i class="ri-eye-line"></i>
+                  </div>
+                </div>
+
+                <p>Lorem Ipsum Color</p>
+
+                <div class="small-star">
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-line"></i>
+                </div>
+
+                <p>$99.00</p>
+                <div class="add">
+                  <i class="ri-home-2-line"></i>
+                  <p>Add to Cart</p>
+                </div>
+              </div>
+              <div class="small-img">
+                <div class="fruit-img">
+                  <img src="img/fruit10.png" alt="" class="f-image" />
+
+                  <div class="fruit-icon">
+                    <i class="ri-heart-fill heart"></i>
+                    <i class="ri-code-view"></i>
+                    <i class="ri-eye-line"></i>
+                  </div>
+                </div>
+                <p>Lorem Ipsum Color</p>
+
+                <div class="small-star">
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-fill"></i>
+                  <i class="ri-star-s-line"></i>
+                </div>
+                <p>$99.00</p>
+                <div class="add">
+                  <i class="ri-home-2-line"></i>
+                  <p>Add to Cart</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main_slider">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/first.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/second.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/third.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/fourth.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/fifth.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/sixth.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/seventh.webp" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/eight.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/nine.jpg" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="fruit-box1">
+            <div class="small-img">
+              <div class="fruit-img" style="background-color: grey">
+                <img src="img/cardimom.jpg" alt="" />
+
+                <div class="fruit-icon">
+                  <i class="ri-heart-line"></i>
+                  <i class="ri-code-view"></i>
+                  <i class="ri-eye-line"></i>
+                </div>
+              </div>
+
+              <p>Lorem Ipsum Color</p>
+
+              <div class="add">
+                <i class="ri-home-2-line"></i>
+                <p>Add to Cart</p>
+              </div>
+            </div>
+            <div class="small-img">
+              <div class="fruit-img">
+                <img src="img/onion.png" alt="" />
+                <div class="fruit-icon">
+                  <i class="ri-heart-line"></i>
+                  <i class="ri-code-view"></i>
+                  <i class="ri-eye-line"></i>
+                </div>
+              </div>
+
+              <p>Lorem Ipsum Color</p>
+
+              <div class="small-star">
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-line"></i>
+              </div>
+              <p>$99.00</p>
+            </div>
+            <div class="small-img">
+              <div class="fruit-img">
+                <img src="img/fruit3.png" alt="" />
+
+                <div class="fruit-icon">
+                  <i class="ri-heart-line"></i>
+                  <i class="ri-code-view"></i>
+                  <i class="ri-eye-line"></i>
+                </div>
+              </div>
+
+              <p>Lorem Ipsum Color</p>
+
+              <div class="small-star">
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-line"></i>
+              </div>
+              <p>$99.00</p>
+            </div>
+            <div class="small-img">
+              <div class="fruit-img">
+                <img src="img/fruit4.png" alt="" />
+
+                <div class="fruit-icon">
+                  <i class="ri-heart-line"></i>
+                  <i class="ri-code-view"></i>
+                  <i class="ri-eye-line"></i>
+                </div>
+              </div>
+
+              <p>Lorem Ipsum Color</p>
+
+              <div class="small-star">
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-line"></i>
+              </div>
+
+              <p>$99.00</p>
+            </div>
+            <div class="small-img">
+              <div class="fruit-img">
+                <img src="img/fruit5.png" alt="" />
+
+                <div class="fruit-icon">
+                  <i class="ri-heart-line"></i>
+                  <i class="ri-code-view"></i>
+                  <i class="ri-eye-line"></i>
+                </div>
+              </div>
+              <p>Lorem Ipsum Color</p>
+
+              <div class="small-star">
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-fill"></i>
+                <i class="ri-star-s-line"></i>
+              </div>
+              <p>$99.00</p>
+            </div>
+          </div>
+
+          <div class="blog">
+            <h4>Our Blogs</h4>
+            <div class="veg_blog">
+              <div class="blog_img">
+                <div class="blog1">
+                  <img src="img/blog1.jpg" alt="" />
+                </div>
+
+                <p>06 January 2024</p>
+                <p style="font-size: 2vmin">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eaque, eos aliquam asperiores similique nihil eius ab
+                  recusandae fuga? Asperiores maiores harum quam blanditiis vero
+                  laudantium obcaecati nobis voluptatem fugit voluptatibus.
+                </p>
+
+                <button class="shop1">Read More</button>
+              </div>
+              <div class="blog_img">
+                <div class="blog1">
+                  <img src="img/boxes.jpg" alt="" />
+                </div>
+
+                <p>06 January 2024</p>
+                <p style="font-size: 2vmin">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eaque, eos aliquam asperiores similique nihil eius ab
+                  recusandae fuga? Asperiores maiores harum quam blanditiis vero
+                  laudantium obcaecati nobis voluptatem fugit voluptatibus.
+                </p>
+
+                <button class="shop1">Read More</button>
+              </div>
+              <div class="blog_img">
+                <div class="blog1">
+                  <img src="img/spice.avif" alt="" />
+                </div>
+
+                <p>06 January 2024</p>
+                <p style="font-size: 2vmin">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eaque, eos aliquam asperiores similique nihil eius ab
+                  recusandae fuga? Asperiores maiores harum quam blanditiis vero
+                  laudantium obcaecati nobis voluptatem fugit voluptatibus.
+                </p>
+
+                <button class="shop1">Read More</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="brand">
+            <h4>LATEST BRANDS</h4>
+
+            <div class="brand1">
+              <div class="inner_brand">
+                <img src="img/icon1.webp" alt="" />
+              </div>
+              <div class="inner_brand">
+                <img src="img/icon2.jpeg" alt="" />
+              </div>
+              <div class="inner_brand">
+                <img src="img/icon3.jpg" alt="" />
+              </div>
+              <div class="inner_brand">
+                <img src="img/icon4.jpg" alt="" />
+              </div>
+              <div class="inner_brand">
+                <img src="img/icon5.jpg" alt="" />
+              </div>
+              <div class="inner_brand">
+                <img src="img/icon6.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <footer class="footer">
+            <div class="footer_box" style="gap: 10px; padding-top: 15px">
+              <h2 style="padding-right: 87px; color: white">
+                Flip<span style="color: rgb(131, 188, 18)">mart</span>
+              </h2>
+              <p style="padding-left: 20px">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Aspernatur dolorum velit quisquam quidem iusto praesentium.
+              </p>
+
+              <div class="footer_icon">
+                <div class="f-icon1">
+                  <i class="ri-facebook-fill"></i>
+                </div>
+                <div class="f-icon1">
+                  <i class="ri-linkedin-fill"></i>
+                </div>
+                <div class="f-icon1">
+                  <i class="ri-instagram-line"></i>
+                </div>
+                <div class="f-icon1">
+                  <i class="ri-twitter-fill"></i>
+                </div>
+                <div class="f-icon1">
+                  <i class="ri-github-fill"></i>
+                </div>
+              </div>
+            </div>
+            <div class="footer_box foot_one">
+              <div class="small_footer_box">
+                <h3>watchon</h3>
+                <div class="underline"></div>
+              </div>
+
+              <h4>Aboutus</h4>
+              <p>Your Neighborhood Grocer</p>
+              <p>Quality Meets Convenience</p>
+              <p>Quality Ingredients</p>
+              <p>Elevating Everyday Meals</p>
+              <p>Culinary Connection Hub</p>
+            </div>
+            <div class="footer_box foot_one">
+              <div class="small_footer_box">
+                <h3>my account</h3>
+                <div class="underline"></div>
+              </div>
+              <p>Profile Information</p>
+              <p>Order History</p>
+              <p>Wishlist</p>
+              <p>Address Book</p>
+              <p>Preferences and Settings</p>
+            </div>
+            <div class="footer_box foot_one">
+              <div class="small_footer_box">
+                <h3>extras</h3>
+                <div class="underline"></div>
+              </div>
+              <p>Recipe Inspiration</p>
+              <p>Healthy Eating Tips</p>
+              <p>Cooking and Storage Tips</p>
+              <p>Local Producer Spotlights</p>
+              <p>Customer Feedback and Suggestions</p>
+            </div>
+            <div class="footer_box foot_one">
+              <div class="small_footer_box">
+                <h3>contact info</h3>
+                <div class="underline"></div>
+              </div>
+              <div class="address">
+                <h4>adress</h4>
+                <p>
+                  <i class="ri-home-line"></i> ganganagar,purani abadi,house
+                  no.1084
+                </p>
+              </div>
+              <div class="address">
+                <h4>email adress</h4>
+                <p><i class="ri-mail-line"></i> dprajpaswan50@gmail.com</p>
+              </div>
+              <div class="address">
+                <h4>mobile number</h4>
+                <p><i class="ri-smartphone-line"></i> 8955372970</p>
+              </div>
+              <div class="address">
+                <h4 >Contact Form</h4>
+                <p class="cform">
+                  <i class="ri-eraser-line cform"></i>click for form
+                </p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <div class="cart"></div>
+    <div class="contact_form">
+        <h1 style="margin-left: 200px; cursor: pointer;" class="remove">&times</h1>
+        <ul class="user_info">
+            <label for="">enter your name</label>
+            <input type="text">
+        </ul>
+        <ul class="user_info">
+            <label for="">enter your email</label>
+            <input type="email">
+        </ul>
+        <ul class="user_info">
+            <label for="">enter your description</label>
+            <textarea name="" id="area"></textarea>
+        </ul>
+        <button class="sub">submit</button>
+        
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script src="js/main.js"></script>
+  <script src="js/main1.js"></script>
+
+  <script>
+    ScrollReveal({
+      reset: true,
+      distance: "60px",
+      duration: 1500,
+      delay: 200,
+    });
+    ScrollReveal().reveal(".social", { delay: 60, origin: "top" });
+    ScrollReveal().reveal(".home-text", { delay: 50, origin: "left" });
+    ScrollReveal().reveal(".about-img", { delay: 30, origin: "left" });
+    ScrollReveal().reveal(".home-img", { delay: 100, origin: "right" });
+    ScrollReveal().reveal(".about-text", { delay: 100, origin: "right" });
+    ScrollReveal().reveal(".srv-1", { delay: 700, origin: "left" });
+    ScrollReveal().reveal(".srv-2", { delay: 500, origin: "left" });
+    ScrollReveal().reveal(".srv-3", { delay: 300, origin: "left" });
+    ScrollReveal().reveal(".srv-4", { delay: 150, origin: "left" });
+    ScrollReveal().reveal(".icon", {
+      delay: 100,
+      origin: "top",
+      interval: 200,
+    });
+  </script>
+</html>
